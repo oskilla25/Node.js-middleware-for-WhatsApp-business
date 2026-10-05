@@ -1,0 +1,10 @@
+# Caddy Reverse Proxy Configuration for B2B Middleware
+
+yourdomain.duckdns.org {
+    reverse_proxy localhost:3000
+    
+    log {
+        output file app.log
+        format json
+    }
+}
